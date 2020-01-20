@@ -1,5 +1,7 @@
 # photo folder
 /photos
+# dubg launch file
+launch.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
