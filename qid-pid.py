@@ -5,7 +5,7 @@
 import os
 import csv
 
-_path = '.\\photos\\'
+_path = './photos/'
 with open('qid_and_pid.csv') as f:
     lines = csv.reader(f)
     for line in lines:
@@ -15,5 +15,5 @@ with open('qid_and_pid.csv') as f:
                 print('\n')
                 print("Match: {}, {}, {}".format(line[0] ,filename, line[1]))
                 rename = filename
-                os.rename(_path+rename, _path+line[1]+'.jpg')
+                os.rename(_path+rename, _path+line[1]+'[folder-desc].jpg')
                 print("File {} renamed to {}".format(rename,line[1] ))
